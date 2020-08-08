@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+    <link rel="stylesheet" href="../reveal/dist/reset.css">
+    <link rel="stylesheet" href="../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+  <style>
+    .container{
+        display: flex;
+    }
+    .col{
+        flex: 1;
+    }
+  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>¡Bienvenidas! A continuación encontrarán 4 preguntas del tema de percepciones animales.
+    Queremos que las lean entre ustedes y compartan sus experiencias: ¿Cómo les fue? ¿Qué les gustó más? O ¿en qué tuvieron
+    dificultades? Tendrán 8 minutos para ésta actividad, deberán escoger una vocera y al final ella nos contará a todas nosotras
+    sus vivencias y conclusiones.
+        </section>
+        <section> ¿Están Listas?
+          <p class="fragment">¡Comencemos!</p>
+        </section>
+        <section> Primero vamos a saludarnos entre nosotras
+          y escogeremos la vocera y luego responderemos las preguntas.
+          Recomendamos que la vocera tome apuntes de las opiniones
+          de las demás compañeras. Recuerden que éstos temas los
+          encontramos en <a href="https://malokalabs.org" target="_blank">malokalabs.org</a> pueden ir revisando
+          la plataforma mientras contestan las preguntas.
+        </section>
+        <section> 
+            1. ¿Por qué crees que es tan diferente intentar atrapar la bola de papel tapándose un ojo?
+          <div class="container">
+            <div class="col">
+              <img data-src="./assets/imagen1.png"/>
+            </div>
+            <div class="col">
+              <img data-src="./assets/imagen2.png"/>
+            </div>
+          </div>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+            2. Para las siguientes 4 imágenes discutan las siguientes preguntas:
+            * <p class="fragment highlight-green">¿Pudieron ver la imagen?</p>
+            * <p class="fragment highlight-green">¿Por qué algunas personas no pueden verlas?</p>
+          </textarea>
+        </section>
+        <section data-background-image="./assets/imagen3.jpg" data-background-size="80%"></section>
+        <section data-background-image="./assets/imagen4.jpg" data-background-size="80%"></section>
+        <section data-background-image="./assets/imagen5.jpg" data-background-size="80%"></section>
+        <section data-background-image="./assets/imagen6.jpg" data-background-size="80%"></section>
+        <section> 
+          3. ¿Te imaginaste otras formas de tomar fotos con los ojos cerrados?
+          <div class="container">
+            <div class="col">
+              <img data-src="./assets/imagen7.png"/>
+            </div>
+            <div class="col">
+              <img data-src="./assets/imagen8.jpg"/>
+            </div>
+          </div>
+        </section>
+				<section>4. ¿Cuáles experiencias de las que se plantearon en la semana fueron las que más te gustaron?</section>
+        <section>¡Muy bien! Ahora vuelve a la sesión principal porque allí compartiremos nuestras respuestas.</section>
+			</div>
+		</div>
+
+    <script src="../reveal/dist/reveal.js"></script>
+    <script src="../reveal/plugin/notes/notes.js"></script>
+    <script src="../reveal/plugin/markdown/markdown.js"></script>
+    <script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
