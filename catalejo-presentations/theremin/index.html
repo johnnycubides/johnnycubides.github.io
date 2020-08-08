@@ -12,6 +12,14 @@
 
 		<!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+    <style>
+      .container{
+          display: flex;
+      }
+      .col{
+          flex: 1;
+      }
+    </style>
 	</head>
 	<body>
     <div class="reveal">
@@ -45,21 +53,34 @@
             </video>
           </section>
         </section>
-        <section><h2>¿Mi propio theremin?</h2></section>
+        <section><h2>¿Mi propio theremin?</h2>
+          <p class="fragment">¿Pero cómo?</p>
+        </section>
         <section><h3>Entradas: Sensores</h3><h5>Ultrasonido</h5>
-          <img data-src="img/ultrasonido.jpg">
+          <div class="container">
+            <div class="col">
+              <p class="fragment fade-in-then-out">¿Cómo podríamos hacer que se detecte la posición de mi mano? </p>
+              <img class="fragment stretch" data-src="img/murcielago.jpg">
+            </div>
+            <div class="col">
+              <img class="fragment" data-src="img/ultrasonido.jpg">
+            </div>
+          </div>
         </section>
         <section>
           <section><h3>Salidas: Actuadores</h3><h5>Parlantes</h5>
-            <img data-src="img/parlante.jpg">
+            <img class="stretch" data-src="img/parlante.jpg">
           </section>
           <section><h3>Salidas: Actuadores</h3><h5>LEDs RGB</h5>
             <img data-src="img/leds.jpeg">
           </section>
+          <section><h3>Salidas: Actuadores</h3><h5>LEDs RGB</h5>
+            <img data-src="img/ws2812.gif">
+          </section>
         </section>
         <section>
           <section><h3>Cerebro</h3><h5>Microcontrolador</h5>
-            <img data-src="img/ArduinoUno.jpg">
+            <img class="stretch" data-src="img/esp32.jpg"/>
           </section>
           <section><h4>Programación</h4>
             <video data-autoplay src="videos/programacion.mp4" type="video/mp4" />
@@ -67,6 +88,8 @@
           </section>
         </section>
         <section><h4>Mis comunicaciones extraterrestres</h4>
+          <img class="stretch" data-src="img/aliens.gif"/>
+          
           <!-- <video data-autoplay src="videos/Estrellas.mp4" type="video/mp4" /></video> -->
         </section>
         <section><h1>Gracias</h4></section>
