@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+      <div id="app">
+        <div class="contenedor">
+          <div class="contenedor-h">
+            <div class="contenido">
+              <p>ANIMAL</p>
+              <img v-bind:src="'./img/' + images.view" width="500"/>
+            </div>
+            <div class="contenido">
+                <p>CÓDIGO UNIVERSAL</p>
+                <img v-bind:src="'./img/' + images.proteinas" width="350"/>
+            </div>
+          </div>
+          <div class="contenedor"> 
+            <div>
+              <p>{{ message }}</p>
+            </div>
+            <div class="contenedor-h">
+                <p>Introduce aquí la secuencia de aminoácidos: </p> 
+                <input v-model="inputs.A" placeholder="edítame" maxlength="3" size="4">
+                <input v-model="inputs.B" placeholder="edítame" maxlength="3" size="4">
+                <input v-model="inputs.C" placeholder="edítame" maxlength="3" size="4">
+                <input v-model="inputs.D" placeholder="edítame" maxlength="3" size="4">
+                <input v-model="inputs.E" placeholder="edítame" maxlength="3" size="4">
+                <button v-on:click="select">Buscar animal</button>
+            </div>
+            <div>
+              <p>{{ animal }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </body>
+</html>
