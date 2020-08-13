@@ -48,7 +48,7 @@ var app = new Vue({
         this.animal = "ORQUIDEA"
       } else{
         this.images.view = this.images.what
-        this.animal = "Revisa tu secuencia, no hemos encontrado un animal o planta"
+        this.animal = "Revisa tu secuencia! No hemos encontrado un animal o planta"
       }
       // this.inputs.A = 'hello'
       // this.images.view = this.images.oso

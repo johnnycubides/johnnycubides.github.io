@@ -8,7 +8,7 @@
         <div class="contenedor">
           <div class="contenedor-h">
             <div class="contenido">
-              <p>ANIMAL</p>
+              <p>ANIMAL O PLANTA</p>
               <img v-bind:src="'./img/' + images.view" width="500"/>
             </div>
             <div class="contenido">
@@ -27,7 +27,7 @@
                 <input v-model="inputs.C" placeholder="edítame" maxlength="3" size="4">
                 <input v-model="inputs.D" placeholder="edítame" maxlength="3" size="4">
                 <input v-model="inputs.E" placeholder="edítame" maxlength="3" size="4">
-                <button v-on:click="select">Buscar animal</button>
+                <button v-on:click="select">Buscar</button>
             </div>
             <div>
               <p>{{ animal }}</p>
