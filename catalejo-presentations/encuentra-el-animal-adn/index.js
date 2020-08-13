@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     message: 'Utilizando el código universal debes traducir la secuencia dada a una de aminoácidos. Cuando tengas la secuencia de aminoácidos, podrás descubrir a qué animal o planta corresponde.',
-    animal: "Bucando animal...",
+    animal: "Bucando animal o planta...",
     images: {
       view: 'adn.jpg',
       proteinas: 'proteinas.png',
