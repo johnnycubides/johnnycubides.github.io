@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+    <link rel="stylesheet" href="../reveal/dist/reset.css">
+    <link rel="stylesheet" href="../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+    <style>
+      .container{
+          display: flex;
+      }
+      .col{
+          flex: 1;
+      }
+    </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1357K4j6otA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+          <a href="https://www.youtube.com/watch?v=1357K4j6otA" target='_blank'>¿Cuántas dimensiones hay?</a>
+        </section>
+				<section> <h4>Banda de Möbius</h4>
+          <img class="stretch" data-src="img/mobius.jpg"/>
+        </section>
+        <section>
+          <section>
+            <img class="stretch" data-src="img/fosforos.png"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/fosforos.jpg"/>
+          </section>
+        </section>
+        <section> <h4>La torre de Hanoi</h4>
+          <section>
+            <div class="container">
+              <div class="col">
+                <p align="left">Dice la leyenda que en un templo en el que, siguiendo las órdenes de Brahma, los sacerdotisas intentan mover 64 discos dorados de un poste a otro</p>
+              </div>
+              <div class="col">
+                <img class="stretch" data-src="img/hanoi.png"/>
+              </div>
+            </div>
+          </section> 
+          <section>
+            <p>Los sacerdotes deben cumplir ciertas reglas:</p>
+            <p class="fragment" align="left">1. Los discos dorados nunca deben tocar el suelo, siempre deben estar en uno de los 3 postes. </p>
+            <p class="fragment" align="left">2. Un disco no puede quedar debajo de uno más grande.</p>
+            <p class="fragment" align="left">3. Solo pueden mover un disco a la vez.</p>
+          </section>
+          <section>
+            <p>Según la profecía, cuando los sacerdotes terminen de desplazar los discos de un poste al otro, el mundo se acabará.</p>
+            <p class="fragment" align="left">Si fueras uno de esos sacerdotes ¿cuándo terminaría el mundo?</p>
+          </section>
+          <section>
+            <p>Nos reuniremos en salas en grupos pequeños e intentaremos resolver el problema con menos discos. Ten presente el número de movimientos que realizaste y nos cuentas.</p> <br>
+            <a href="https://www.juegos-mentales.com/juego/Torre+de+Hanoi">https://www.juegos-mentales.com/juego/Torre+de+Hanoi</a> <br>
+            <a href="http://www.uterra.com/juegos/torre_hanoi.php">http://www.uterra.com/juegos/torre_hanoi.php</a>
+          </section>
+          <section>
+            <p class="fragment">3 discos -> 7 movimientos mínimos</p>
+            <p class="fragment">4 discos -> 15 movimientos mínimos</p>
+            <p class="fragment">5 discos -> 31 movimientos mínimos</p>
+            <p class="fragment">6 discos -> 63 movimientos mínimos</p>
+            <p class="fragment">7 discos -> 128 movimientos mínimos</p>
+            <p class="fragment">64 discos -> ???</p>
+            <p class="fragment">2^n - 1</p>
+            <p class="fragment">2^64 - 1 = 4294967296^2 = 1.8446744x10^19</p>
+          </section>
+          <section>
+            <p class="fragment">0 discos -> 2^0 = 1</p>
+            <p class="fragment">1 discos -> 2^1 = 2</p>
+            <p class="fragment">2 discos -> 2^2 = 4</p>
+            <p class="fragment">3 discos -> 2^3 = 8</p>
+            <p class="fragment">4 discos -> 2^4 = 16</p>
+            <p class="fragment">5 discos -> 2^5 = 32</p>
+            <p class="fragment">6 discos -> 2^6 = 64</p>
+            <p class="fragment">7 discos -> 2^7 = 128</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <img class="stretch" data-src="img/binario.jpg"/>
+          </section>
+          <section>
+            <a href="https://marce-steam.blogspot.com/">https://marce-steam.blogspot.com/</a>
+          </section>
+        </section>
+			</div>
+		</div>
+
+    <script src="../reveal/dist/reveal.js"></script>
+    <script src="../reveal/plugin/notes/notes.js"></script>
+    <script src="../reveal/plugin/markdown/markdown.js"></script>
+    <script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
