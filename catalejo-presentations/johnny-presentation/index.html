@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Practica Medialab</title>
+
+    <link rel="stylesheet" href="../reveal/dist/css/reveal.css">
+    <link rel="stylesheet" href="../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../reveal/dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <!-- <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <style>
+    .container{
+        display: flex;
+    }
+    .col{
+        flex: 1;
+    }
+  </style>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section> <h4>Algo de mí</h4>
+          <section>
+            <img class="stretch" data-src="img/familia1.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/familia2.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/abuela.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/luna-stephi.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/caro-johnny.jpg"/>
+          </section>
+        </section>
+        <section> <h4>Una historia</h4>
+          <section>
+            <img class="stretch" data-src="img/nasa-premiados.jpg"/>
+          </section>
+          <section>
+            <img data-src="img/astronauta.jpg" width="80%" height="auto"/>
+          </section>
+          <section>
+            <div class="container">
+              <div class="col">
+                <img data-src="img/luna.jpeg" width="90%" height="auto"/>
+              </div>
+              <div class="col">
+                <img data-src="img/regolito.jpeg" width="90%" height="auto"/>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img data-src="img/muestra.jpg" width="80%" height="auto"/>
+          </section>
+          <section>
+            <img data-src="img/lunaarena.jpg" width="100%" height="auto"/>
+          </section>
+          <section>
+            <div class="container">
+              <div class="col">
+                <img data-src="img/spica1.jpg" width="100%" height="auto"/>
+              </div>
+              <div class="col">
+                <img data-src="img/spica2.jpg" width="100%" height="auto"/>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="col">
+                <img data-src="img/control.jpg" width="100%" height="auto"/>
+              </div>
+              <div class="col">
+                <img data-src="img/control2.jpg" width="100%" height="auto"/>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img data-src="img/saturno.jpg" width="90%" height="auto"/>
+          </section>
+          <section>
+            <div class="container">
+              <div class="col">
+                <img data-src="img/saturno3.jpg" width="100%" height="auto"/>
+              </div>
+              <div class="col">
+                <img data-src="img/saturno-motor.jpg" width="100%" height="auto"/>
+              </div>
+            </div>
+          </section>
+          <section>
+            <img data-src="img/joe-cosmo.jpg" width="50%" height="auto"/>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="../reveal/dist/reveal.js"></script>
+    <script src="../reveal/plugin/notes/notes.js"></script>
+    <script src="../reveal/plugin/markdown/markdown.js"></script>
+    <script src="../reveal/plugin/highlight/highlight.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        autoPlayMedia: true,  //null, true, false
+        controls:true,
+        dependencies: [
+          { src: '../reveal/plugin/markdown/marked.js' },
+          { src: '../reveal/plugin/markdown/markdown.js' },
+          { src: '../reveal/plugin/notes/notes.js', async: true },
+          { src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+      Reveal.configure({
+        slideNumber: "c/t", // "h.v" "h/v" "c" "c/t"
+        showSlideNumber: "all" // "all" "speaker" "print"
+      });
+    </script>
+  </body>
+</html>
