@@ -1,0 +1,44 @@
+@font-face {
+  font-family: catalejo-font;
+  src: url(catalejo.ttf);
+}
+
+@font-face {
+  font-family: catalejo-aux-font;
+  src: url(lao-sangam-mn.ttf);
+}
+
+/*
+ * https://www.w3schools.com/cssref/pr_text_text-transform.asp
+ * https://www.w3schools.com/cssref/pr_font_weight.asp
+ * */
+
+.catalejo-title {
+  font-family: catalejo-font !important;
+  text-transform: none !important;
+  font-weight: normal !important;
+}
+
+.catalejo-text {
+  font-family: catalejo-aux-font !important;
+}
+
+.img-r {
+  border-radius: 50%;
+}
+
+.team {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
