@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[papersize={210mm,297mm},tmargin=20mm,
+bmargin=28mm,lmargin=30mm, rmargin=20mm]{geometry} %A4 210mm x 297mm
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts, latexsym }
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsfonts}
+\usepackage{float}
+%Dont ident
+\setlength\parindent{0pt}
+
+%%%%%%%
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength\headheight{26.0pt}
+%\addtolength{\textheight}{-5.0pt}
+%\chead{\includegraphics[scale=0.2]{imag/catalejo.png}}
+\lhead{\includegraphics[scale=0.2]{imag/catalejo.png}}
+%\lhead{\includegraphics[scale=0.2]{imag/catalejo.png}}
+\rhead{www.catalejoplus.com}
+
+
+%##########################################
+% Separar palarbras correctamente.
+\hyphenation{co-rres-pon-da}
+
+%\twocolumn
+
+\begin{document}
+%\thispagestyle{fancy}
+%\tableofcontents
+
+\input{src/section1.tex}
+
+% \section*{Actualización del documento}
+
+% \today
+
+\end{document}
