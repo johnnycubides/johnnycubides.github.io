@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+    <link rel="stylesheet" href="../reveal/dist/reset.css">
+    <link rel="stylesheet" href="../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+    <style>
+      .container{
+          display: flex;
+      }
+      .col{
+          flex: 1;
+      }
+    </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-background-video="video/resultado.mp4" data-background-video-loop="true"  data-background-size="cover" data-background-opacity="1.0"> <h2>Reloj Binario </h2></section>
+        <section data-background-color="#ffffff" data-background-image="img/materiales.png" data-background-size="70%" data-background-opacity="1.0"></section>
+        <section> <h2>PARTE 1: Construcción de Hardware</h2>
+          <p class="fragment">Ten presente que iremos conectando parte por parte y que deberás estar muy atenta</p>
+          <p class="fragment">No olvides que para mayor seguridad te recomendamos hacer las siguientes conexiones sin energizar la tarjeta</p>
+          <p class="fragment">Para construir nuestro reloj haremos uso del siguiente diagrama pictográfico</p>
+        </section>
+        <section> <h4>Iniciaremos conectando un solo led</h4>
+          <img class="stretch" data-src="img/reloj-binario_1_led_bb.png"/>
+        </section>
+        <section> <h4>Continuaremos conectando 2 LEDs más</h4>
+          <img class="stretch" data-src="img/reloj-binario_3_leds_bb.png"/>
+        </section>
+        <section> <h4>Finalmente conectaremos 8 LEDs</h4>
+          <img class="stretch" data-src="img/reloj-binario_bb.png"/>
+        </section>
+        <section>
+          <section>
+            <p>Podrás guiarte de las siguientes imágenes con el fin de comparar y detectar errores antes de continuar</p>
+            <p class="fragment">Para ver las imágenes oprime la flecha hacia abajo</p>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/1.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/2.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/3.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/4.jpg"/>
+          </section>
+        </section>
+        <section> <h2>PARTE 2: Construcción de Software</h2>
+         <p class="fragment">Ahora en nuestro celular Android construiremos el algoritmo con el cual podemos medir el tiempo en segundos.</p> 
+        </section> 
+        <section>
+          <img class="stretch" data-src="img/codigo-reloj.jpg"/>
+        </section>
+        <section>
+          <p>Comprueba tu código y envíalo a la tarjeta</p>
+          <p class="fragment">No olvides oprimir el botón RST en la tarjeta después de enviar el programa</p>
+        </section>
+        <section> <h4>Resultado esperado</h4>
+          <video data-autoplay loop controls class="stretch" data-src="video/resultado.mp4" type="video/mp4"></video>
+        </section>
+        <section data-background-color="#ffffff"> <h4>¿Y como medir el tiempo?</h4>
+          <img class="stretch" data-src="img/leds8.png.png"/>
+        </section>
+			</div>
+		</div>
+    <script src="../reveal/dist/reveal.js"></script>
+    <script src="../reveal/plugin/notes/notes.js"></script>
+    <script src="../reveal/plugin/markdown/markdown.js"></script>
+    <script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+        slideNumber: true
+			});
+		</script>
+	</body>
+</html>
