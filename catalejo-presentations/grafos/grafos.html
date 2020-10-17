@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+    <link rel="stylesheet" href="../reveal/dist/reset.css">
+    <link rel="stylesheet" href="../reveal/dist/reveal.css">
+    <link rel="stylesheet" href="../reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css" id="highlight-theme">
+    <style>
+      .container{
+          display: flex;
+      }
+      .col{
+          flex: 1;
+      }
+    </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section> <h2>Grafos</h2></section>
+				<section>
+          <section> <h4>Puente de Königsberg</h4>
+            <video data-autoplay loop controls class="stretch" data-src="videos/puente_euler.mp4" type="video/mp4"></video> 
+          </section>
+          <section> 
+            <img data-src="img/puente/abstraccion-puente.png" width="100%" height="auto"/>
+          </section>
+        </section>
+        <section> 
+          <section>
+            <img data-src="img/grafos/tipos.jpg" width="90%" height="auto"/>
+          </section>
+          <section>
+            <img data-src="img/grafos/grafo1.png" width="100%" height="auto"/>
+          </section>
+          <section>
+            <img data-src="img/grafos/grafo2.png" width="100%" height="auto"/>
+          </section>
+          <section>
+            <img data-src="img/grafos/grafo3.png" width="80%" height="auto"/>
+          </section>
+        </section>
+        <section> <h4>Hacer la casita sin levantar el lápiz</h4>
+          <img data-src="img/casa/casita.jpg" width="50%" height="auto"/>
+        </section>
+        <section>
+          <section>
+            <img data-src="img/ejemplos1/simpsons-tree.png" width="100%" height="auto"/>
+          </section>
+          <section>
+            <img data-src="img/ejemplos1/conexiones-transmilenio.png" width="100%" height="auto"/>
+          </section>
+          <section>
+            <img data-src="img/ejemplos1/grafo-ciudades.png" width="100%" height="auto"/>
+          </section>
+        </section>
+        <section>
+          <section>            
+            <video data-autoplay loop controls class="stretch" data-src="videos/batman.mp4" type="video/mp4"></video>
+          </section>
+          <section>
+            <img data-src="img/ejemplos1/joker.png" width="80%" height="auto"/>
+          </section>
+        </section>
+        <section>
+          <video data-autoplay loop controls class="stretch" data-src="videos/simpsom.mp4" type="video/mp4"></video>
+        </section>
+        <section>
+          <section>
+            <img class="stretch" data-src="img/ejemplos2/grafo0.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/ejemplos2/grafo1.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/ejemplos2/grafo2.jpg"/>
+          </section>
+          <section>
+            <img class="stretch" data-src="img/ejemplos2/grafo3.jpg"/>
+          </section>
+        </section>
+			</div>
+		</div>
+
+    <script src="../reveal/dist/reveal.js"></script>
+    <script src="../reveal/plugin/notes/notes.js"></script>
+    <script src="../reveal/plugin/markdown/markdown.js"></script>
+    <script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+        slideNumber: true
+			});
+		</script>
+	</body>
+</html>
