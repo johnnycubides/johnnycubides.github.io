@@ -26,19 +26,3 @@
 .img-r {
   border-radius: 50%;
 }
-
-.team {
-  border-radius: 50%;
-  width: 150px;
-}
-
-.row {
-  display: flex;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-
